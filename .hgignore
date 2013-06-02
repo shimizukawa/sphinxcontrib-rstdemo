@@ -1,0 +1,11 @@
+^bin/
+^_build/
+^develop-eggs/
+^dist/
+^eggs/
+^parts/
+
+syntax: glob
+*.pyc
+*.swp
+*.egg-info

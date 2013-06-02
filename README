@@ -1,0 +1,74 @@
+Sphinx rstdemo directive extension to display raw reStructuredText and rendered output.
+
+Output Sample
+==============
+:output: http://packages.python.org/sphinxcontrib.rstdemo/
+:source: http://packages.python.org/sphinxcontrib.rstdemo/_sources/index.txt
+
+
+Features
+========
+* Provide ``rstdemo`` directive to display raw and rendered reStrucutredText.
+
+
+Setup
+=====
+Install sphinxcontrib.rstdemo with easy_install or pip or some installer::
+
+   $ easy_install sphinxcontrib.rstdemo
+
+and add to extension in your conf.py::
+
+   extensions = ['sphinxcontrib.rstdemo']
+
+
+Using rstdemo directive
+========================
+
+You can use as ``code-block:: rst`` directive::
+
+   .. rstdemo::
+
+      Some text line.
+      Second line will joined to 1st line.
+
+      * item 1
+      * item 2
+
+        * item 2-1
+        * item 2-2
+
+      * item 3
+
+
+Requirements
+============
+* sphinx 1.0.x or later.
+
+
+License
+=======
+Licensed under the BSD license.
+
+
+History
+=======
+
+0.1.0 (2013/6/1)
+-----------------
+first release
+
+* provides `rstdemo` directive.
+
+
+TODOS
+======
+
+Features
+---------
+
+* 2-block mode (display raw and rendered block as vertical or horizonal).
+* 2-tab mode (switch displaying by tab)
+* Accept code-block's options to rstdeom directive.
+* Documentation: style customization.
+
